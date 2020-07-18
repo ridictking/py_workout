@@ -34,7 +34,20 @@ class Numbers:
             print('All parameters must be a type number')
         print(sum)
 
-test = Numbers();
-#test.guess_numbers(3,10)
-test.summing_numbers(1,2,3,4,5,6)
+        return sum
+
+    def run_timing(self):
+        sum=0
+        count = 0
+        run_time_list = list()
+        while True:
+            run_time = input('Enter 10 km run time: ')
+            if not run_time:
+                break
+            count+=1
+            sum+= float(run_time)
+        print(f'sum is {sum} and average is {sum/count}')
+
+        return (sum/count)
+
             
